@@ -1,0 +1,196 @@
+/* עיצוב כללי */
+body {
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    color: #f2e8cf;
+}
+
+/* header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 130px;
+}
+
+nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: black !important;
+    text-decoration: none;
+    padding: 0 12px;
+    position: relative;
+    /* הגדרת מיקום יחסי לילדים שלו */
+}
+
+header nav a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    transition: 1000ms;
+}
+
+header nav a:hover::after {
+    background: black;
+    width: 100%;
+}
+
+.additional-text {
+    position: absolute;
+    top: 120%;
+    /* יוסיף את הכיתוב מתחת לקישור */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    /* נסתיר את הכיתוב עד שהמשתמש ילחץ על הקישור */
+    transition: opacity 0.3s;
+    /* אנימציה של עמעום */
+}
+
+nav a:hover .additional-text {
+    opacity: 1;
+    /* הצגת הכיתוב כאשר מעבירים על הקישור */
+}
+
+.material-symbols-outlined {
+    font-size: 40px !important;
+    /* גודל הגופן */
+    font-weight: 400;
+    /* משקל הגופן */
+}
+
+.title {
+    color: black;
+    text-shadow: -7px 6px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.title h1 {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* עיצוב לפריט */
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: black;
+    border: 1px solid #f2e8cf;
+    border-radius: 8px;
+    box-shadow: 1px 1px 23px 6px black;
+    width: 1000px;
+}
+
+.item img {
+    max-width: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+/* עיצוב לכלל הכפתורים */
+button {
+    background-color: #f2e8cf;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: solid 2px black;
+    border-radius: 8px;
+}
+
+.item-buttons button {
+    margin-top: 5px;
+    /* מרווח בין הכפתורים */
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column.description {
+    flex: 2;
+    text-align: right;
+}
+
+.column.buttons {
+    flex: 0.5;
+    text-align: center;
+}
+
+
+/* עיצוב לכפתור עם class="plus" */
+.plus {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    color: #f2e8cf;
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 23px 6px black;
+    border: 1px solid #f2e8cf;
+}
+
+button:hover {
+    color: #f2e8cf;
+    background-color: black;
+    border: solid 2px #f2e8cf;
+}
+
+/* footer */
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    color: black;
+}
+
+h5 {
+    margin: 0;
+}

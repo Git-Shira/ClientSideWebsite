@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 130px;
+}
+
+nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: black !important;
+    text-decoration: none;
+    padding: 0 12px;
+    position: relative;
+    /* הגדרת מיקום יחסי לילדים שלו */
+}
+
+header nav a::after {
+    content: "";
+    width: 0%;
+    /* background: white; */
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    transition: 1000ms;
+}
+
+header nav a:hover::after {
+    background: black;
+    width: 100%;
+}
+
+.additional-text {
+    position: absolute;
+    top: 120%;
+    /* יוסיף את הכיתוב מתחת לקישור */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    /* נסתיר את הכיתוב עד שהמשתמש ילחץ על הקישור */
+    transition: opacity 0.3s;
+    /* אנימציה של עמעום */
+}
+
+nav a:hover .additional-text {
+    opacity: 1;
+    /* הצגת הכיתוב כאשר מעבירים על הקישור */
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+    /* גודל הגופן */
+    font-weight: 400;
+    /* משקל הגופן */
+}
+
+.title {
+    color: black;
+    text-shadow: -7px 6px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 260px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.title h1 {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* bottons */
+.container-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    margin-left: 50px;
+}
+
+.container-buttons button {
+    color: #f2e8cf;
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 80px;
+    margin-right: 10px;
+    /* רווח בין כל כפתור לכפתור הקודם */
+}
+
+.text {
+    margin: 0;
+    font-weight: bold;
+    /* הדגשה */
+    text-align: center;
+    /* מיקום במרכז השורה מבחינת גובה */
+    display: flex;
+    align-items: center;
+}
+
+.container-buttons2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    margin-left: 50px;
+}
+
+.container-buttons2 button {
+    color: #f2e8cf;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    margin-right: 25px;
+    /* רווח בין כל כפתור לכפתור הקודם */
+}
+
+/* products */
+.product {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    max-width: 100px;
+    border: 1px solid #ddd;
+    /* קטן יותר מהקודם */
+    border-radius: 15px;
+    /* מסגרת עם פינות עגולות */
+}
+
+.product img.product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: solid 2px #ddd;
+    border-radius: 8px;
+    /* פינות עגולות לתמונה בלבד */
+    box-shadow: -2px 2px 15px 5px #FFFFFF;
+    background-size: cover;
+}
+
+.product .product-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 8px;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: none;
+    border-radius: 0 0 8px 8px;
+    /* פינות עגולות לתיאור בלבד */
+}
+
+.product:hover .product-details {
+    display: block;
+}
+
+.row {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* footer */
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+h5 {
+    margin: 0;
+}

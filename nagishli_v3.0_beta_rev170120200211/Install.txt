@@ -1,0 +1,47 @@
+﻿  _   _             _     _     _      _ 
+ | \ | |           (_)   | |   | |    (_)
+ |  \| | __ _  __ _ _ ___| |__ | |     _ 
+ | . ` |/ _` |/ _` | / __| '_ \| |    | |
+ | |\  | (_| | (_| | \__ \ | | | |____| |
+ |_| \_|\__,_|\__, |_|___/_| |_|______|_|
+               __/ |                     
+              |___/                      
+
+-----------------------------------------------------
+NagishLi - A free accessibility plugin from Localize
+-----------------------------------------------------
+
+Thank you for downloading NagishLi v3.0 Beta. This is the second version of what will become the solid base of the next 3.x versions.
+
+Notice! Because this is still an early version, some of the options and settings are not available, there is no supported browsers list yet and it needs more improvements for screen readers and extra work for languages and mobile devices support. All known problems will be fixed in the next versions.
+
+Also - there's no documentation yet and some of the credits are missing - all of those will be added to v3.0 Final.
+
+How to install
+----------------
+Similar to NagishLi v2, after uploading nagishli_alpha.js and 'nagishli-files' folder, copy and paste the following code right before </body>.
+
+<script>
+nagishli_config = {
+	// Plugin language, you can choose en for English, and he for Hebrew
+	language: "en",
+	// Currently, you can choose from Blue, Red, Green, Purple, Pink, Yellow, Gray, Orange, Brown, Turquoise and Black
+	color: "blue"
+};
+</script>
+// Url to nagishli_beta.js
+<script src="url/to/nagishli_beta.js?v=3.0b" charset="utf-8" defer></script>
+
+To keep getting the latest news about NagishLi, it is also recommended to signup for the newsletter at:
+http://nagish.li/en/newsletter.html
+
+You can also follow after NagishLi's progress on Facebook: https://fb.me/NagishLi.A11y
+
+NagishLi is free to download. If you're interested in donating to support its continued developement, please visit:
+http://nagish.li/en/donate.html
+
+Thanks again for choosing NagishLi, and I hope version 3 will help your website visitors even more.
+
+
+Kind regards,
+Dan Ya'akov | Localize

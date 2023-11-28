@@ -1,0 +1,23 @@
+.movie_screen_info{
+  min-height: 86vh;
+}
+
+div#NagishLiTrigger{
+  right:0 !important;
+  left:30px;
+  bottom: 0 !important;
+  top:100px;
+  filter: hue-rotate(180deg);
+}
+
+div#NagishLiWidget{
+  left:auto;
+  right:10px;
+  transform: translate(120%,0);
+}
+
+div#NagishLiWidget.nagishli-widget-show{
+  left:auto;
+  right:10px;
+  transform: translate(0,0);
+}
