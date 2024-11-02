@@ -683,7 +683,7 @@ function createDeleteFunction(index) {
     };
 }
 
-// פונקציה למחיקת איבר מהמערך
+// פונקציה למחיקת מוצר מהמערך
 function deleteItem(index) {
     itemsArray.splice(index, 1);
     saveToLocalStorage(); // שמירה ב-local storage
@@ -720,11 +720,11 @@ function editItem(index) {
 
 // הוספת מוצר חדש
 function addNewItem() {
-    let newName = prompt("הכנס שם לאיבר החדש:");
-    let newPrice = prompt("הכנס מחיר לאיבר החדש:");
-    let newImg = prompt("הכנס URL לתמונה של האיבר:");
-    let newCategory = prompt("הכנס קטגוריה לאיבר החדש:");
-    let newFilter = prompt("הכנס פילטר לאיבר החדש:");
+    let newName = prompt("הכנס שם למוצר החדש:");
+    let newPrice = prompt("הכנס מחיר למוצר החדש:");
+    let newImg = prompt("הכנס URL לתמונה של המוצר:");
+    let newCategory = prompt("הכנס קטגוריה למוצר החדש:");
+    let newFilter = prompt("הכנס פילטר למוצר החדש:");
 
     if (
         newName !== "" &&
