@@ -23,7 +23,10 @@ This site is designed with full accessibility support, utilizing an accessibilit
 ## Website Flow
 
 You can watch the website flow video by clicking on the logo below:
-[![Logo](images/logo.png)](https://drive.google.com/file/d/1_ZRaOe5dG_CVHb21701aVhE0bwhgW9Ny/preview)
+
+<a href="https://drive.google.com/file/d/1_ZRaOe5dG_CVHb21701aVhE0bwhgW9Ny/preview">
+    <img src="images/logo.png" alt="Logo" width="200">
+</a>
 
 ## Getting Started
 
