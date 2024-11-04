@@ -34,4 +34,4 @@ To get started with the project, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Open the project folder.
-3. Launch the site by opening `home.html` in a web browser.
+3. Launch the site by opening `index.html` in a web browser.
